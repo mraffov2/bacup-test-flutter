@@ -95,6 +95,7 @@ class _LoginState extends State<Login> {
                             } else if (passwordControler.text.trim() == '') {
                               return;
                             }
+                            FocusScope.of(context).unfocus();
                             setState(() {
                               emailIncorrect = false;
                               fieldsRequired = false;
